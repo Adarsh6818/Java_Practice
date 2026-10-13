@@ -19,6 +19,10 @@ public class Main{
         System.out.println(age);
         System.out.println("Score = " + score);
 
+        Student s1 = new Student("Bhajiya", 8);
+        Student s2 = new Student("halua", 2);
 
+        s1.display();
+        s2.display();
     }
 }
