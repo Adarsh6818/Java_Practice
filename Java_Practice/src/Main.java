@@ -24,5 +24,7 @@ public class Main{
 
         s1.display();
         s2.display();
+
+        s1.display();
     }
 }
