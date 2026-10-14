@@ -6,7 +6,11 @@ public class Student {
     private int grade_1;
 
     // Constructor
-    Student(String name, int age, int grade) {
+    Student(
+            String name,
+            int age,
+            int grade
+    ) {
      setName(name);
      setAge(age);
      setGrade(grade);
