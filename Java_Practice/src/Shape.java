@@ -1,4 +1,4 @@
-public class Shape{
+public abstract class Shape{
     private final String name;
 
     public Shape(String name) {
@@ -8,7 +8,5 @@ public class Shape{
     public String getName() {return name;}
 
 
-    public double area() {
-        return 0;
-    }
+    public abstract double area();
 }

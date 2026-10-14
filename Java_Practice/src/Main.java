@@ -1,30 +1,17 @@
 public class Main{
     public static void main(String[] args) {
-        // Variable Declaration Syntax: type variableName = value
 
-        String name = "Sexy";
+        // Class and Object Demo -
 
-        //Separate initialization and Declaration
-        int age; //initialization
-        age = 28; //declaration
+        Student s1 = new Student("Derek", 23, 30);
 
-        //final Keyword: this will declare the variable as "final" or "constant", which means unchangeable and read-only
-        final int score = 53;
+        s1.display();
+        s1.setGrade(90);
 
+        System.out.println("Grade: " + s1.getGrade());
 
 
-        System.out.println(name);
-        System.out.println("Pajamas have not been");
-        System.out.println("Found");
-        System.out.println(age);
-        System.out.println("Score = " + score);
-
-//        Student s1 = new Student("Derek", 23, 30);
-//
-//        s1.display();
-//        s1.setGrade(90);
-//
-//        System.out.println("Grade: " + s1.getGrade());
+        // Encapsulation Example -
 
         BankAccount b1 = new BankAccount("Akshay", 4000);
 
@@ -33,5 +20,16 @@ public class Main{
         b1.deposit(1000);
         b1.withdraw(4500);
 
+        //Inheritance Example and Practice -
+
+        Shape[] shapes = {
+                new Circle(4),
+                new Rectangle(10, 12),
+                new Circle(5)
+        };
+
+        for (Shape s : shapes) {
+            System.out.printf("%s area: %.2f%n", s.getName(), s.area());
+        }
     }
 }
