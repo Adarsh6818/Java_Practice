@@ -19,11 +19,19 @@ public class Main{
         System.out.println(age);
         System.out.println("Score = " + score);
 
-        Student s1 = new Student("Derek", 23, 30);
+//        Student s1 = new Student("Derek", 23, 30);
+//
+//        s1.display();
+//        s1.setGrade(90);
+//
+//        System.out.println("Grade: " + s1.getGrade());
 
-        s1.display();
-        s1.setGrade(90);
+        BankAccount b1 = new BankAccount("Akshay", 4000);
 
-        System.out.println("Grade: " + s1.getGrade());
+        System.out.println("Hi, " + b1.getOwner() + ". Your account Balance is " + b1.getBalance() + " Euros.");
+
+        b1.deposit(1000);
+        b1.withdraw(4500);
+
     }
 }

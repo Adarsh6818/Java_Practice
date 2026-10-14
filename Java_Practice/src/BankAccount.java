@@ -19,6 +19,7 @@ public class BankAccount {
             throw new IllegalArgumentException("Amount cannot be negative");
         }
         balance = balance + amount;
+        System.out.println("Deposit amount = " + amount + ". Your current balance is = " + balance);
     }
 
     public void withdraw(double amount) {
@@ -29,6 +30,7 @@ public class BankAccount {
             throw new IllegalArgumentException("Insufficient funds");
         }
         balance = balance - amount;
+        System.out.println("Withdraw amount = " + amount + ". Your current balance is = " + balance);
     }
 
     // Getters:
