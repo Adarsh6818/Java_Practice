@@ -32,4 +32,12 @@ public class BankAccount {
     }
 
     // Getters:
+    public double getBalance () {
+        return balance;
+    }
+
+    public String getOwner() {
+        return owner;
+    }
 }
+
