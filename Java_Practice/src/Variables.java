@@ -11,6 +11,6 @@ public class Variables {
         char grade = 'S';
 
         System.out.println("Hi!, " + firstName + " " + lastName + "." );
-        System.out.println("You have been awared grade " + grade + " for your exceptional performance.");
+        System.out.println("You have been awarded grade " + grade + " for your exceptional performance.");
     }
 }
