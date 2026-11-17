@@ -5,11 +5,11 @@ public class ConstructorDemo {
         StudentDetails s1 = new StudentDetails(); // Assign all the default values
         StudentDetails s2 = new StudentDetails("Aditya"); // Assign name and rest default values
         StudentDetails s3 = new StudentDetails("Rahul", 23); // assign name and age and rest will be default values
-        StudentDetails s4 = new StudentDetails("Abhishek", 21, 202123); // same as above
-        StudentDetails s5 = new StudentDetails("Nikhil", 22, 202122, "GGITS" ); // same as above
+        StudentDetails s4 = new StudentDetails("Abhishek", 21, 201); // same as above
+        StudentDetails s5 = new StudentDetails("Nikhil", 22, 202, "GGITS" ); // same as above
 
         System.out.println("Student Details: ");
-        System.out.println("s1: " + s1.name + ", " + s1.age + ", " + s1.rollNumber + ", " + s1.college);
+        System.out.println("s1: " + s1.name + ", " + s1.age + ", " + s1.rollNumber + ", " + s1.college); // Default values
         System.out.println("s2: " + s2.name + ", " + s2.age + ", " + s2.rollNumber + ", " + s2.college);
         System.out.println("s3: " + s3.name + ", " + s3.age + ", " + s3.rollNumber + ", " + s3.college);
         System.out.println("s4: " + s4.name + ", " + s4.age + ", " + s4.rollNumber + ", " + s4.college);
@@ -25,26 +25,31 @@ class StudentDetails {
     int rollNumber;
     String college;
 
+    // Constructor Chaining using this();
+
     // Default Constructor
     StudentDetails (){
-
+        this("Unknown", 0,000,"Unknown");
     }
 
     // Parameterized Constructor
 
     StudentDetails(String name) {
-        this.name = name;
+//        this.name = name;
+        this(name, 0, rollNumber = 000, college = "Unknown");
     }
 
     StudentDetails(String name , int age) {
-        this.name = name;
-        this.age = age;
+//        this.name = name;
+//        this.age = age;
+        this(name, age, rollNumber = 000, college = "Unknown");
     }
 
     StudentDetails(String name , int age, int rollNumber) {
-        this.name = name;
-        this.age = age;
-        this.rollNumber = rollNumber;
+//        this.name = name;
+//        this.age = age;
+//        this.rollNumber = rollNumber;
+        this(name, age, rollNumber, college = "Unknown");
     }
 
     StudentDetails(String name , int age, int rollNumber, String college) {
@@ -53,4 +58,6 @@ class StudentDetails {
         this.rollNumber = rollNumber;
         this.college = college;
     }
+
+
 }
